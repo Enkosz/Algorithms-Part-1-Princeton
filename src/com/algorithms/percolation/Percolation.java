@@ -26,7 +26,7 @@ public class Percolation {
         validateCoordinates(row, col);
 
         // skip when is already open and coordinates are valid
-        if(areValidCoordinates(row, col) && isOpen(row, col))
+        if(isOpen(row, col))
             return;
 
         int point = get1DCoordinates(row, col);
